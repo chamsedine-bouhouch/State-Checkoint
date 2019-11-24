@@ -6,9 +6,7 @@ export default class Hello extends React.Component {
     }, 2000);
   }
   componentWillUnmount() {
-    window.addEventListener("beforeunload", event => {
-      event.returnValue = `Goodbye`;
-    });
+    alert("Goodbye");
   }
   render() {
     return <div></div>;
